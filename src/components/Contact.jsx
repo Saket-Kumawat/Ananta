@@ -154,7 +154,7 @@ const Contact = () => {
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
               <h3 className="text-2xl font-bold text-white mb-6">Send us a message</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" netlify>
                 <div>
                   <Label htmlFor="name" className="text-white mb-2 block">Full Name *</Label>
                   <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your name" className="bg-white/10 border-white/20 text-white placeholder:text-slate-400" required />
@@ -260,4 +260,5 @@ const Contact = () => {
     </section>
   );
 };
+
 export default Contact;
